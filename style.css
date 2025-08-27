@@ -1,4 +1,50 @@
 body {
-  background-color: aquamarine;
-  color: rgb(255, 127, 127);
+  background-color: rgb(181, 187, 185);
+  color: rgb(32, 29, 29);
+}
+.container {
+  display: block;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 60px;
+  background-color: white;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  color: rgb(0, 102, 204);
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+select {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+.city-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgb(0, 0, 0.2);
+}
+.time {
+  font-weight: bold;
+  line-height: 28px;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: rgb(100, 100, 100);
 }
