@@ -1,5 +1,6 @@
 function updateCity(cityID, timezone) {
   let city = document.getElementById(cityID);
+
   let dates = city.querySelector(".dates");
   let time = city.querySelector(".time");
   dates.innerHTML = moment().tz(timezone).format("DD MMMM YYYY");
