@@ -24,15 +24,15 @@ select {
   margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-size: 1em;
+  font-size: 18px;
 }
 .city-options {
   display: flex;
-  flex-wrap: wrap;
+  margin: 10px 0;
   justify-content: space-between;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px dashed rgb(0, 0, 0.2);
+
+  padding: 30px 0;
+  border-bottom: 1px dashed rgb(150, 149, 149);
 }
 .time {
   font-weight: bold;
