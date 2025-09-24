@@ -35,7 +35,7 @@ function updateCity(event) {
           <div class="time">${moment()
             .tz(cityTime)
             .format("hh:mm:ss [<small>]A[</small>]")}</div>
-          </div>   <a href="/">Go back</a>";
+          </div>   <a href="/">Go back</a>"`;
 }
 let citiesSelect = document.getElementById("city");
 citiesSelect.addEventListener("change", updateCity);
