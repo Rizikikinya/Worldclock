@@ -13,13 +13,13 @@
   <body>
     <div class="container">
       <h1>WORLD CLOCK</h1>
-      <select name="cities" id="">
+      <select name="cities" id="city">
         <option value="">Choose city</option>
-        <option value="">London</option>
-        <option value="">paris</option>
-        <option value="">Kampala</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Paris">paris</option>
+        <option value="Africa/Kampala">Kampala</option>
       </select>
-
+<div id="cities-present">
       <div class="city-options" id="london">
         <div>
           <h2>London</h2>
@@ -28,9 +28,9 @@
           <div class="time">00:00:00 <small>AM</small></div>
           </div>
 
-          <div class="city-options" id="lagos">
+          <div class="city-options" id="paris">
             <div>
-        <h2>Lagos</h2>
+        <h2>Paris</h2>
           <div class="dates">12 August 2025</div>
           </div>
           <div class="time">00:00:00 <small>AM</small></div>
@@ -43,6 +43,8 @@
           </div>
           <div class="time">00:00:00 <small> AM</small></div>
           </div>
+          </div>
+          <div id="city-container"></div>
         
         
       </div>
