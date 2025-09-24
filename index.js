@@ -19,6 +19,9 @@ setInterval(updateAllCities, 1000);
 
 function updateCity(event) {
   let cityTime = event.target.value;
+  if (cityTime === "current") {
+    cityTime = moment.tz.guess();
+  }
 
   cityTimes = moment().tz(cityTime).format("DD MMMM YYYY");
 
