@@ -35,8 +35,9 @@ select {
   border-bottom: 1px dashed rgb(150, 149, 149);
 }
 .time {
-  font-weight: bold;
-  line-height: 28px;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.9rem;
 }
 h2 {
   font-size: 1.5em;
