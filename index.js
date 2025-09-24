@@ -20,18 +20,14 @@ setInterval(updateAllCities, 1000);
 function updateCity(event) {
   let cityTime = event.target.value;
 
+  cityTimes = moment().tz(cityTime).format("DD MMMM YYYY");
+
   let cityElement = document.getElementById("cities-container");
-  if (!cityTime) {
-    cityElement.innerHTML = "";
-    return;
-  }
 
   cityElement.innerHTML = `<div class="city-options" >
         <div>
-          <h2>${cityTime}</h2>
-          <div class="dates">${moment()
-            .tz(cityTime)
-            .format("DD MMMM YYYY")}</div>
+          <h2>${cityTime.split("/")[1]}</h2>
+          <div class="dates">${cityTimes}</div>
           </div>
           <div class="time">${moment()
             .tz(cityTime)
