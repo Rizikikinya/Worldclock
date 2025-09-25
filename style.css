@@ -1,10 +1,10 @@
 body {
-  background-color: rgb(181, 187, 185);
+  background-color: #f9f7fe;
   color: rgb(32, 29, 29);
 }
 .container {
   display: block;
-  max-width: 800px;
+  max-width: 600px;
   margin: 40px auto;
   padding: 60px;
   background-color: white;
@@ -12,32 +12,76 @@ body {
 }
 h1 {
   text-align: center;
-  color: rgb(0, 102, 204);
-  font-family: Arial, sans-serif;
+  color: rgb(34, 35, 36);
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 select {
   display: block;
   width: 80%;
-  padding: 10px;
+  padding: 12px 16px;
   margin-bottom: 20px;
-  border-radius: 5px;
+
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+
   border: 1px solid #533fc4;
-  font-size: 18px;
+  border-radius: 8px;
+  background-color: #fff;
+
+  /* Subtle shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  /* Smooth transition */
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
+
+/* Highlight on focus */
+select:focus {
+  border-color: #6a57e5;
+  box-shadow: 0 0 6px rgba(106, 87, 229, 0.4);
+  outline: none;
+}
+
+/* Optional hover effect */
+select:hover {
+  border-color: #6a57e5;
+}
+
 .city-options {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
 
   padding: 30px 0;
-  border-bottom: 1px dashed rgb(150, 149, 149);
+  border-bottom: 1px dashed rgb(0, 0, 0, 0.2);
+}
+.dates {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 5px;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .time {
-  font-weight: 900;
-  font-size: 4rem;
+  font-size: 26px; /* a little smaller than 28px */
+  font-weight: 900; /* bolder weight */
+  color: #222; /* strong contrast */
   line-height: 1.2;
+
+  font-family: "Tagesschrift", system-ui;
+
+  font-style: normal;
 }
 h2 {
   font-size: 1.5em;
@@ -48,8 +92,4 @@ footer {
   margin-top: 20px;
   font-size: 0.9em;
   color: rgb(100, 100, 100);
-}
-.time {
-  line-height: 38px;
-  font-size: larger;
 }
